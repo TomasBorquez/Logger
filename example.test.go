@@ -1,4 +1,4 @@
-package examples
+package logger_test
 
 import (
 	"github.com/TomasBorquez/logger"
