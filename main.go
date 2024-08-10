@@ -6,7 +6,7 @@ import (
 
 var (
 	Reset    = "\033[0m"
-	Gray     = "\033[0;30m"
+	Gray     = "\033[0;37m"
 	Red      = "\033[0;31m"
 	Green    = "\033[0;32m"
 	Orange   = "\033[0;33m"
@@ -27,7 +27,7 @@ var (
 // Info displays a message in a gray color
 // Works like Printf, so you can pass arguments, so they are added to the string
 func Info(message string, args ...any) {
-	fmt.Printf(Gray+message+"\n", args...)
+	fmt.Printf(Gray+message+Reset+"\n", args...)
 }
 
 // Error displays a message in a red color
