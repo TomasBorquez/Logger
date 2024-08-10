@@ -21,7 +21,8 @@ Import the package in your Go file and use as such:
 import "github.com/TomasBorquez/logger"
 
 func main() {
-    logger.Error("An error occurred: %s", err)
+    logger.Info("Some message")
+    logger.Error("An error occurred: %v", err)
     logger.Success("Operation completed successfully")
     logger.Warning("Warning: %s", warningMessage)
     logger.Custom(logger.Blue + "Custom colored message" + logger.Reset)

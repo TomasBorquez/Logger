@@ -1,8 +1,6 @@
 package logger_test
 
-import (
-	"github.com/TomasBorquez/logger"
-)
+import "github.com/TomasBorquez/logger"
 
 func ExampleInfo() {
 	logger.Info("Just some information being displayed %s", "here")
