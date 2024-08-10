@@ -30,13 +30,15 @@ func main() {
 
 ## Available Functions
 
-`Error(message string, args ...any)`: Displays a message in red
+`logger.Info(message string, args ...any)`: Displays a message in gray
 
-`Success(message string, args ...any)`: Displays a message in green
+`logger.Error(message string, args ...any)`: Displays a message in red
 
-`Warning(message string, args ...any)`: Displays a message in orange
+`logger.Success(message string, args ...any)`: Displays a message in green
 
-`Custom(message string, args ...any)`: Displays a message with custom formatting
+`logger.Warning(message string, args ...any)`: Displays a message in orange
+
+`logger.Custom(message string, args ...any)`: Displays a message with custom formatting
 
 ## Color Constants
 The following color constants are available for use with the Custom function:
